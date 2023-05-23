@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+i {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+img {
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #fcee94;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body .bg {
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/bg.jpg") no-repeat top center;
+  z-index: -99;
+}
+html body .container {
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+  height: 100%;
+}
+html body .container .logo_pic {
+  width: 495px;
+  height: 161px;
+  background: url("../img/logo.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 78px;
+  left: -41px;
+}
+html body .container .img_1 {
+  width: 642px;
+  height: 622px;
+  background: url("../img/img_1.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 32px;
+  right: -116px;
+  z-index: -1;
+  -webkit-animation: img_1 0.5s linear 0s;
+          animation: img_1 0.5s linear 0s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+html body .container .enter_group {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 382px;
+  left: 6px;
+}
+html body .container .enter_group .input_item {
+  width: auto;
+  height: auto;
+  margin-right: 24px;
+}
+html body .container .enter_group .input_item input {
+  width: 246px;
+  height: 33px;
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ae7c39), color-stop(99%, #4a2600));
+  background: linear-gradient(to top, #ae7c39 0%, #4a2600 99%);
+  border: 1px solid #ffea9e;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 20px;
+}
+html body .container .enter_group .input_item input:first-child {
+  margin-bottom: 14px;
+}
+html body .container .enter_group .input_item input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+html body .container .enter_group .input_item input::-moz-placeholder {
+  color: #ffffff;
+}
+html body .container .enter_group .input_item input:-ms-input-placeholder {
+  color: #ffffff;
+}
+html body .container .enter_group .input_item input::-ms-input-placeholder {
+  color: #ffffff;
+}
+html body .container .enter_group .input_item input::placeholder {
+  color: #ffffff;
+}
+html body .container button {
+  width: 139px;
+  height: 78px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#782900), color-stop(15%, #d08f28), color-stop(30%, #974e00), color-stop(37%, #b05c01), color-stop(73%, #fff7be), color-stop(95%, #e9ae3a), to(#b03d01));
+  background: linear-gradient(to top, #782900 0%, #d08f28 15%, #974e00 30%, #b05c01 37%, #fff7be 73%, #e9ae3a 95%, #b03d01 100%);
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+@-webkit-keyframes img_1 {
+  0% {
+    -webkit-transform: scaleX(0.6) scaleY(1.2);
+            transform: scaleX(0.6) scaleY(1.2);
+  }
+  34% {
+    -webkit-transform: scaleX(1.2) scaleY(0.7);
+            transform: scaleX(1.2) scaleY(0.7);
+  }
+  75% {
+    -webkit-transform: scaleX(0.9) scaleY(1.2);
+            transform: scaleX(0.9) scaleY(1.2);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes img_1 {
+  0% {
+    -webkit-transform: scaleX(0.6) scaleY(1.2);
+            transform: scaleX(0.6) scaleY(1.2);
+  }
+  34% {
+    -webkit-transform: scaleX(1.2) scaleY(0.7);
+            transform: scaleX(1.2) scaleY(0.7);
+  }
+  75% {
+    -webkit-transform: scaleX(0.9) scaleY(1.2);
+            transform: scaleX(0.9) scaleY(1.2);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+}
