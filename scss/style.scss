@@ -1,0 +1,111 @@
+@import "./reset";
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #422f11;
+
+    body {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        main {
+            width: 100%;
+            height: auto;
+            .wrap {
+                position: relative;
+                margin: 0 auto;
+                .logo {
+                    display: flex;
+                    justify-content: center;
+                    margin: 40px 0 60px;
+                }
+                .form {
+                    width: 280px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin: 0 auto;
+
+                    label {
+                        input {
+                            width: 100%;
+                            padding: 10px 76px;
+                            text-align: center;
+                            border-radius: 10px;
+                            border: 2px solid #de7417;
+                            font-size: 22px;
+                            font-weight: bolder; 
+                            color: #853413;
+                            &::placeholder {
+                                color: #853413;
+                                font-weight: bolder;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    .btn {
+                        background-image: linear-gradient(
+                                to top,
+                                #b48132,
+                                #fae0af 30%,
+                                #d7b676 50%,
+                                #f8fbc0 72%,
+                                #b4812e
+                            ),
+                            linear-gradient(
+                                to top,
+                                #553a05 0%,
+                                #875d0b 33%,
+                                #d3aa5b 69%,
+                                #62390a 82%,
+                                #875d0b 88%,
+                                #f3fbad
+                            );
+                        border: 3px solid transparent;
+                        background-clip: padding-box, border-box;
+                        background-origin: padding-box, border-box;
+                        padding: 18px 0px;
+                        font-size: 24px;
+                        border-radius: 10px;
+                        color: #4d2110;
+                        font-weight: bolder;
+                        position: relative;
+                    }
+                    .mask {
+                        transform: rotateX(180deg);
+                        margin-top: -10px;
+                        mask: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.5));
+                        cursor: default;
+                    }
+                    .btn.login:hover+.btn.mask,
+                    .btn.login:hover{
+                        background-image: linear-gradient(to top, #b38f49, #644202 78%, #694809),
+                            linear-gradient(
+                                to top,
+                                #553a05 0%,
+                                #875d0b 33%,
+                                #d3aa5b 69%,
+                                #62390a 82%,
+                                #875d0b 88%,
+                                #f3fbad
+                            );
+                    }
+                }
+            }
+        }
+
+        .bg {
+            width: 100%;
+            min-width: 1200px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("../img/bg.png") no-repeat;
+            background-size: 100%;
+            z-index: -999;
+        }
+    }
+}
