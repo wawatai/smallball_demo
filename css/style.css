@@ -117,9 +117,9 @@ html body main .wrap .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 0 60px;
+  margin: 90px 0 50px;
 }
-html body main .wrap .form {
+html body main .wrap .fakeForm {
   width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +131,7 @@ html body main .wrap .form {
   gap: 15px;
   margin: 0 auto;
 }
-html body main .wrap .form label input {
+html body main .wrap .fakeForm label input {
   width: 100%;
   padding: 10px 76px;
   text-align: center;
@@ -141,32 +141,32 @@ html body main .wrap .form label input {
   font-weight: bolder;
   color: #853413;
 }
-html body main .wrap .form label input::-webkit-input-placeholder {
+html body main .wrap .fakeForm label input::-webkit-input-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .form label input::-moz-placeholder {
+html body main .wrap .fakeForm label input::-moz-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .form label input:-ms-input-placeholder {
+html body main .wrap .fakeForm label input:-ms-input-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .form label input::-ms-input-placeholder {
+html body main .wrap .fakeForm label input::-ms-input-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .form label input::placeholder {
+html body main .wrap .fakeForm label input::placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .form .btn {
+html body main .wrap .fakeForm .btn {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#b48132), color-stop(30%, #fae0af), color-stop(50%, #d7b676), color-stop(72%, #f8fbc0), to(#b4812e)), -webkit-gradient(linear, left bottom, left top, from(#553a05), color-stop(33%, #875d0b), color-stop(69%, #d3aa5b), color-stop(82%, #62390a), color-stop(88%, #875d0b), to(#f3fbad));
   background-image: linear-gradient(to top, #b48132, #fae0af 30%, #d7b676 50%, #f8fbc0 72%, #b4812e), linear-gradient(to top, #553a05 0%, #875d0b 33%, #d3aa5b 69%, #62390a 82%, #875d0b 88%, #f3fbad);
   border: 3px solid transparent;
@@ -179,7 +179,7 @@ html body main .wrap .form .btn {
   font-weight: bolder;
   position: relative;
 }
-html body main .wrap .form .mask {
+html body main .wrap .fakeForm .mask {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   margin-top: -10px;
@@ -189,8 +189,8 @@ html body main .wrap .form .mask {
           mask: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.5));
   cursor: default;
 }
-html body main .wrap .form .btn.login:hover + .btn.mask,
-html body main .wrap .form .btn.login:hover {
+html body main .wrap .fakeForm .btn.login:hover + .btn.mask,
+html body main .wrap .fakeForm .btn.login:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#b38f49), color-stop(78%, #644202), to(#694809)), -webkit-gradient(linear, left bottom, left top, from(#553a05), color-stop(33%, #875d0b), color-stop(69%, #d3aa5b), color-stop(82%, #62390a), color-stop(88%, #875d0b), to(#f3fbad));
   background-image: linear-gradient(to top, #b38f49, #644202 78%, #694809), linear-gradient(to top, #553a05 0%, #875d0b 33%, #d3aa5b 69%, #62390a 82%, #875d0b 88%, #f3fbad);
 }
