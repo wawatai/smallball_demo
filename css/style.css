@@ -102,24 +102,21 @@ html body {
   height: auto;
   overflow: hidden;
 }
-html body main {
+html body .container {
   width: 100%;
   height: auto;
 }
-html body main .wrap {
+html body .container .login {
   position: relative;
   margin: 0 auto;
 }
-html body main .wrap .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 90px 0 50px;
+html body .container .login .logo {
+  width: 401px;
+  height: 203px;
+  background: url("../img/LOGO.png") no-repeat;
+  margin: 90px auto 50px;
 }
-html body main .wrap .fakeForm {
+html body .container .login .input-area {
   width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +128,17 @@ html body main .wrap .fakeForm {
   gap: 15px;
   margin: 0 auto;
 }
-html body main .wrap .fakeForm label input {
+html body .container .login .input-area .login-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+html body .container .login .input-area .login-input label input {
   width: 100%;
   padding: 10px 76px;
   text-align: center;
@@ -141,32 +148,32 @@ html body main .wrap .fakeForm label input {
   font-weight: bolder;
   color: #853413;
 }
-html body main .wrap .fakeForm label input::-webkit-input-placeholder {
+html body .container .login .input-area .login-input label input::-webkit-input-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .fakeForm label input::-moz-placeholder {
+html body .container .login .input-area .login-input label input::-moz-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .fakeForm label input:-ms-input-placeholder {
+html body .container .login .input-area .login-input label input:-ms-input-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .fakeForm label input::-ms-input-placeholder {
+html body .container .login .input-area .login-input label input::-ms-input-placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .fakeForm label input::placeholder {
+html body .container .login .input-area .login-input label input::placeholder {
   color: #853413;
   font-weight: bolder;
   font-size: 24px;
 }
-html body main .wrap .fakeForm .btn {
+html body .container .login .input-area .btn {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#b48132), color-stop(30%, #fae0af), color-stop(50%, #d7b676), color-stop(72%, #f8fbc0), to(#b4812e)), -webkit-gradient(linear, left bottom, left top, from(#553a05), color-stop(33%, #875d0b), color-stop(69%, #d3aa5b), color-stop(82%, #62390a), color-stop(88%, #875d0b), to(#f3fbad));
   background-image: linear-gradient(to top, #b48132, #fae0af 30%, #d7b676 50%, #f8fbc0 72%, #b4812e), linear-gradient(to top, #553a05 0%, #875d0b 33%, #d3aa5b 69%, #62390a 82%, #875d0b 88%, #f3fbad);
   border: 3px solid transparent;
@@ -178,8 +185,9 @@ html body main .wrap .fakeForm .btn {
   color: #4d2110;
   font-weight: bolder;
   position: relative;
+  width: 100%;
 }
-html body main .wrap .fakeForm .mask {
+html body .container .login .input-area .mask {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   margin-top: -10px;
@@ -189,8 +197,8 @@ html body main .wrap .fakeForm .mask {
           mask: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.5));
   cursor: default;
 }
-html body main .wrap .fakeForm .btn.login:hover + .btn.mask,
-html body main .wrap .fakeForm .btn.login:hover {
+html body .container .login .input-area .btn.login:hover + .btn.mask,
+html body .container .login .input-area .btn.login:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#b38f49), color-stop(78%, #644202), to(#694809)), -webkit-gradient(linear, left bottom, left top, from(#553a05), color-stop(33%, #875d0b), color-stop(69%, #d3aa5b), color-stop(82%, #62390a), color-stop(88%, #875d0b), to(#f3fbad));
   background-image: linear-gradient(to top, #b38f49, #644202 78%, #694809), linear-gradient(to top, #553a05 0%, #875d0b 33%, #d3aa5b 69%, #62390a 82%, #875d0b 88%, #f3fbad);
 }
