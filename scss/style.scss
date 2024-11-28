@@ -1,0 +1,109 @@
+@import "./reset";
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #b6a764;
+  min-width: 800px;
+  body {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    .container {
+      width: 100%;
+      height: auto;
+      display: flex;
+
+      position: relative;
+      .main {
+        width: 50%;
+        position: absolute;
+        top: 115px;
+        left: 52.5%;
+        transform: translateX(-77.5%);
+        img {
+          width: 100%;
+        }
+      }
+      .login {
+        position: relative;
+        top: 165px;
+        left: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo {
+          margin-bottom: 20px;
+        }
+        .input-area {
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+          gap: 15px;
+          .login-input {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            label {
+              position: relative;
+              input {
+                width: 227px;
+                height: 40px;
+                background: #ddff9a;
+                border: none;
+                border-radius: 5px;
+                font-size: 22px;
+                font-weight: bolder;
+                box-shadow: inset 0 3px 7px rgb(0, 0, 0, 0.35);
+                position: relative;
+                padding-left: 65px;
+              }
+              .inputAccount{
+                border: 1px solid #cdb76c;
+                box-shadow: 0 2px 0 #8b4b15;
+                position: absolute;
+                border-radius: 5px;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 40px;
+                background: #334a07;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                z-index: 1;
+                line-height: 40px;
+              }
+            }
+          }
+          .btn {
+            width: 140px;
+            height: 100px;
+            font-size: 24px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bolder;
+            background: url('../img/button_BG.png');
+            &:hover,&:active{
+              background: url('../img/button_BG_hover.png');
+              color: #561800;
+            }
+          }
+        }
+      }
+    }
+
+    .bg {
+      width: 100%;
+      min-width: 800px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../img/bg.png") no-repeat;
+      background-size: 100%;
+      z-index: -999;
+    }
+  }
+}
