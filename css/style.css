@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #f5b55f;
+  min-width: 1200px;
+}
+html body {
+  width: 100%;
+  overflow: hidden;
+}
+html body .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+}
+html body .container .login {
+  padding: 50px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  background: url("../img/containBG.png") no-repeat center/contain;
+}
+html body .container .login .input-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+html body .container .login .input-area .login-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+html body .container .login .input-area .login-input label {
+  position: relative;
+}
+html body .container .login .input-area .login-input label input {
+  width: 230px;
+  height: 40px;
+  background: url("../img/inputBG.png") no-repeat center/contain;
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 15px;
+}
+html body .container .login .input-area .login-input label input::-webkit-input-placeholder {
+  color: inherit;
+}
+html body .container .login .input-area .login-input label input::-moz-placeholder {
+  color: inherit;
+}
+html body .container .login .input-area .login-input label input:-ms-input-placeholder {
+  color: inherit;
+}
+html body .container .login .input-area .login-input label input::-ms-input-placeholder {
+  color: inherit;
+}
+html body .container .login .input-area .login-input label input::placeholder {
+  color: inherit;
+}
+html body .container .login .input-area .login-input label .inputAccount {
+  border: 1px solid #cdb76c;
+  -webkit-box-shadow: 0 2px 0 #8b4b15;
+          box-shadow: 0 2px 0 #8b4b15;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 40px;
+  background: #334a07;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  z-index: 1;
+  line-height: 40px;
+}
+html body .container .login .input-area .btn {
+  width: 125px;
+  height: 90px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bolder;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffceaa), color-stop(45%, #a67650), color-stop(65%, #ffd3a0), color-stop(85%, #ffecdf), to(#ffceaa)), -webkit-gradient(linear, left bottom, left top, from(#ffe99e), color-stop(10%, #a27c4e), color-stop(25%, #ffe99e), color-stop(35%, #a27c4e), color-stop(40%, #ffe99e), color-stop(60%, #a27c4e), color-stop(70%, #ffe99e), color-stop(75%, #a27c4e), color-stop(85%, #ffe99e), to(#a27c4e));
+  background: linear-gradient(to top, #ffceaa, #a67650 45%, #ffd3a0 65%, #ffecdf 85%, #ffceaa), linear-gradient(to top, #ffe99e, #a27c4e 10%, #ffe99e 25%, #a27c4e 35%, #ffe99e 40%, #a27c4e 60%, #ffe99e 70%, #a27c4e 75%, #ffe99e 85%, #a27c4e);
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  outline: 2px solid #000;
+  outline-offset: -4px;
+}
+html body .container .login .input-area .btn:active, html body .container .login .input-area .btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffceaa), color-stop(45%, #a67650), color-stop(65%, #ffd3a0), color-stop(85%, #ffecdf), to(#ffceaa)), -webkit-gradient(linear, left bottom, left top, from(#ffe99e), color-stop(10%, #a27c4e), color-stop(25%, #ffe99e), color-stop(35%, #a27c4e), color-stop(40%, #ffe99e), color-stop(60%, #a27c4e), color-stop(70%, #ffe99e), color-stop(75%, #a27c4e), color-stop(85%, #ffe99e), to(#a27c4e));
+  background: linear-gradient(to bottom, #ffceaa, #a67650 45%, #ffd3a0 65%, #ffecdf 85%, #ffceaa), linear-gradient(to top, #ffe99e, #a27c4e 10%, #ffe99e 25%, #a27c4e 35%, #ffe99e 40%, #a27c4e 60%, #ffe99e 70%, #a27c4e 75%, #ffe99e 85%, #a27c4e);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+html body .bg {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/bg.png") no-repeat top center/cover;
+  z-index: -999;
+}
