@@ -1,0 +1,130 @@
+@import "./reset";
+
+html {
+  width: 100%;
+  height: 100%;
+  background: hsl(230, 30%, 4%);
+  min-width: 1100px;
+  body {
+    overflow: hidden;
+    .container {
+      width: 100%;
+      height: 980px;
+      display: flex;
+      justify-content: center;
+      padding-top: 175px;
+      position: relative;
+      .login {
+        width: 730px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        .logo {
+          margin-left: 30px;
+        }
+        .input-area {
+          width: 345px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          .login-input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            label {
+              position: relative;
+              &:first-child {
+                margin-left: 23px;
+                &::after {
+                  width: 87.5%;
+                }
+              }
+              &::after {
+                position: absolute;
+                content: "";
+                background: #fff;
+                width: 82.5%;
+                height: 100%;
+                top: 0;
+                left: 1%;
+                transform: skew(-25deg);
+                z-index: -1;
+                box-shadow: inset 3px 3px 8px  #494949;
+              }
+              input {
+                width: 100%;
+                height: 40px;
+                border: none;
+                font-size: 20px;
+                font-weight: bolder;
+                padding-left: 15px;
+                background: none;
+
+                &::placeholder {
+                  color: inherit;
+                }
+              }
+              .inputAccount {
+                border: 1px solid #cdb76c;
+                box-shadow: 0 2px 0 #8b4b15;
+                position: absolute;
+                border-radius: 5px;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 40px;
+                background: #334a07;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                z-index: 1;
+                line-height: 40px;
+              }
+            }
+          }
+          .btn {
+            width: 130px;
+            height: 30px;
+            font-size: 18px;
+            color: #000;
+            font-weight: bolder;
+            background: transparent;
+            position: relative;
+            margin-left: 40px;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              transform: skew(-25deg);
+              background: linear-gradient(to top, #ff0000, #fffc00);
+              border: 2px solid #ffe400;
+              z-index: -1;
+            }
+            &:active,
+            &:hover {
+              &::after {
+                background: linear-gradient(to bottom, #ff0000, #fffc00);
+              }
+            }
+          } 
+        }
+      }
+    }
+    .bg {
+      width: 100%;
+      // min-width: 1200px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../img/bg.png") no-repeat top center/cover;
+      z-index: -999;
+    }
+  }
+}
