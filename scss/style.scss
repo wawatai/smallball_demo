@@ -1,0 +1,92 @@
+@import "./reset";
+
+html {
+  background: #f39700;
+  min-width: 1350px;
+  body {
+    overflow: auto hidden;
+    .container {
+      width: 100%;
+      height: 980px;
+      position: relative;
+      .login {
+        position: absolute;
+        left: 43%;
+        top: 5%;
+        .logo {
+          img {
+            width: 675px;
+            height: 400px;
+          }
+        }
+        .input-area {
+          margin: -12%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 35px;
+          .login-input {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            label {
+              width: 335px;
+              height: 60px;
+              box-sizing: border-box;
+              border: 2px solid #fff;
+              outline: 3px solid #ffd800;
+              background: #000;
+              border-radius: 14px;
+
+              input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                font-size: 24px;
+                font-weight: bolder;
+                padding-left: 24px;
+                background: none;
+                color: #fff;
+
+                &::placeholder {
+                  color: inherit;
+                }
+              }
+            }
+          }
+          .btn {
+            width: 185px;
+            height: 60px;
+            position: relative;
+            border: 4px solid #000;
+            border-radius: 24px;
+            background: linear-gradient(#ffe84c, #ff8400);
+            font-size: 34px;
+            color: #000;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:active,
+            &:hover {
+              background: linear-gradient(#ff8400, #ffe84c);
+            }
+          } 
+        }
+      }
+    }
+    .bg {
+      width: 100%;
+      // min-width: 1200px;
+      background: url("../img/bg.png") no-repeat top center/cover;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -999;
+    }
+  }
+}
